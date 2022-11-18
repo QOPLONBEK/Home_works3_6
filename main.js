@@ -1,18 +1,18 @@
-let Res = document.querySelector('.natija')
+let text = document.querySelector('.soz')
 
 let son = prompt('Sonni kiriting')
 
-let boshRes = son % 3
-let keyingiRes = son % 5
+let oneRes = son % 3
+let twoRes = son % 5
 
 
-if(boshRes == 0 && keyingiRes == 0){
+if(oneRes == 0 && twoRes == 0){
     text.textContent = "Bu son 3 ga ham 5 ga ham bo'linadi"
 }
-else if(boshRes == 0 && keyingiRes !== 0){
+else if(oneRes == 0 && twoRes !== 0){
     text.textContent = "Bu son 3 ga bo'linadi"
 }
-else if(boshRes !== 0 && keyingiRes == 0){
+else if(oneRes !== 0 && twoRes == 0){
     text.textContent = "Bu son 5 ga bo'linadi"
 }
 else{
